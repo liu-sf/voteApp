@@ -1,0 +1,708 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="1cf4d127-d284-4e28-ba94-6ab10a9ab472" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/views/applyList.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/applyMoney.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/companyInfo.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/error.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/register.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/test2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/vote.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/enrollAdmin.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/enrollAdmin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/registerUser.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/registerUser.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/routers/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/routers/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/startFabric.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/hello.ejs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/index.ejs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic-network/.env" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic-network/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic-network/config/channel.tx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic-network/config/genesis.block" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic-network/configtx.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic-network/crypto-config.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic-network/crypto-config/ordererOrganizations/example.com/ca/a0606a4a860a1e31c90a23788da6f3b6b74925ed0d23061af4899409ba46ae6a_sk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic-network/crypto-config/ordererOrganizations/example.com/ca/ca.example.com-cert.pem" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic-network/crypto-config/ordererOrganizations/example.com/msp/admincerts/Admin@example.com-cert.pem" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic-network/crypto-config/ordererOrganizations/example.com/msp/cacerts/ca.example.com-cert.pem" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic-network/crypto-config/ordererOrganizations/example.com/msp/tlscacerts/tlsca.example.com-cert.pem" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic-network/crypto-config/ordererOrganizations/example.com/orderers/orderer.example.com/msp/admincerts/Admin@example.com-cert.pem" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic-network/crypto-config/ordererOrganizations/example.com/orderers/orderer.example.com/msp/cacerts/ca.example.com-cert.pem" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic-network/crypto-config/ordererOrganizations/example.com/orderers/orderer.example.com/msp/keystore/4d2f776c0fef8eac3f460a7c3558dc7859c4fe458e262e674a6c23f242ea33d1_sk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic-network/crypto-config/ordererOrganizations/example.com/orderers/orderer.example.com/msp/signcerts/orderer.example.com-cert.pem" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic-network/crypto-config/ordererOrganizations/example.com/orderers/orderer.example.com/msp/tlscacerts/tlsca.example.com-cert.pem" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic-network/crypto-config/ordererOrganizations/example.com/orderers/orderer.example.com/tls/ca.crt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic-network/crypto-config/ordererOrganizations/example.com/orderers/orderer.example.com/tls/server.crt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic-network/crypto-config/ordererOrganizations/example.com/orderers/orderer.example.com/tls/server.key" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic-network/crypto-config/ordererOrganizations/example.com/tlsca/8d2186556c85d515e737d0c0da8d0d7672785b685cb503bcb95e53dcc279fba7_sk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic-network/crypto-config/ordererOrganizations/example.com/tlsca/tlsca.example.com-cert.pem" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic-network/crypto-config/ordererOrganizations/example.com/users/Admin@example.com/msp/admincerts/Admin@example.com-cert.pem" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic-network/crypto-config/ordererOrganizations/example.com/users/Admin@example.com/msp/cacerts/ca.example.com-cert.pem" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic-network/crypto-config/ordererOrganizations/example.com/users/Admin@example.com/msp/keystore/1deeab5433fa6e5f045eb763109d6165268fba153211af1281f00d45f54b1022_sk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic-network/crypto-config/ordererOrganizations/example.com/users/Admin@example.com/msp/signcerts/Admin@example.com-cert.pem" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic-network/crypto-config/ordererOrganizations/example.com/users/Admin@example.com/msp/tlscacerts/tlsca.example.com-cert.pem" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic-network/crypto-config/ordererOrganizations/example.com/users/Admin@example.com/tls/ca.crt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic-network/crypto-config/ordererOrganizations/example.com/users/Admin@example.com/tls/server.crt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic-network/crypto-config/ordererOrganizations/example.com/users/Admin@example.com/tls/server.key" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic-network/crypto-config/peerOrganizations/org1.example.com/ca/4239aa0dcd76daeeb8ba0cda701851d14504d31aad1b2ddddbac6a57365e497c_sk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic-network/crypto-config/peerOrganizations/org1.example.com/ca/ca.org1.example.com-cert.pem" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic-network/crypto-config/peerOrganizations/org1.example.com/ca/org1.example.com-cert.pem" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic-network/crypto-config/peerOrganizations/org1.example.com/msp/admincerts/Admin@org1.example.com-cert.pem" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic-network/crypto-config/peerOrganizations/org1.example.com/msp/cacerts/ca.org1.example.com-cert.pem" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic-network/crypto-config/peerOrganizations/org1.example.com/msp/tlscacerts/tlsca.org1.example.com-cert.pem" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic-network/crypto-config/peerOrganizations/org1.example.com/peers/peer0.org1.example.com/msp/admincerts/Admin@org1.example.com-cert.pem" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic-network/crypto-config/peerOrganizations/org1.example.com/peers/peer0.org1.example.com/msp/cacerts/ca.org1.example.com-cert.pem" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic-network/crypto-config/peerOrganizations/org1.example.com/peers/peer0.org1.example.com/msp/keystore/46be1d569fe68f33e517c9e0072a0ccfbfb42727480fb8c8d0223af321a7893d_sk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic-network/crypto-config/peerOrganizations/org1.example.com/peers/peer0.org1.example.com/msp/signcerts/peer0.org1.example.com-cert.pem" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic-network/crypto-config/peerOrganizations/org1.example.com/peers/peer0.org1.example.com/msp/tlscacerts/tlsca.org1.example.com-cert.pem" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic-network/crypto-config/peerOrganizations/org1.example.com/peers/peer0.org1.example.com/tls/ca.crt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic-network/crypto-config/peerOrganizations/org1.example.com/peers/peer0.org1.example.com/tls/server.crt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic-network/crypto-config/peerOrganizations/org1.example.com/peers/peer0.org1.example.com/tls/server.key" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic-network/crypto-config/peerOrganizations/org1.example.com/tlsca/ed3fd82393e95fc2c475afc113c8d2c591f745d1babc4d6d9cce0a1acc168acb_sk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic-network/crypto-config/peerOrganizations/org1.example.com/tlsca/tlsca.org1.example.com-cert.pem" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic-network/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/admincerts/Admin@org1.example.com-cert.pem" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic-network/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/cacerts/ca.org1.example.com-cert.pem" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic-network/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/keystore/cd96d5260ad4757551ed4a5a991e62130f8008a0bf996e4e4b84cd097a747fec_sk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic-network/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/signcerts/Admin@org1.example.com-cert.pem" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic-network/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/tlscacerts/tlsca.org1.example.com-cert.pem" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic-network/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/tls/ca.crt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic-network/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/tls/server.crt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic-network/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/tls/server.key" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic-network/crypto-config/peerOrganizations/org1.example.com/users/User1@org1.example.com/msp/admincerts/User1@org1.example.com-cert.pem" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic-network/crypto-config/peerOrganizations/org1.example.com/users/User1@org1.example.com/msp/cacerts/ca.org1.example.com-cert.pem" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic-network/crypto-config/peerOrganizations/org1.example.com/users/User1@org1.example.com/msp/keystore/c75bd6911aca808941c3557ee7c97e90f3952e379497dc55eb903f31b50abc83_sk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic-network/crypto-config/peerOrganizations/org1.example.com/users/User1@org1.example.com/msp/signcerts/User1@org1.example.com-cert.pem" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic-network/crypto-config/peerOrganizations/org1.example.com/users/User1@org1.example.com/msp/tlscacerts/tlsca.org1.example.com-cert.pem" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic-network/crypto-config/peerOrganizations/org1.example.com/users/User1@org1.example.com/tls/ca.crt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic-network/crypto-config/peerOrganizations/org1.example.com/users/User1@org1.example.com/tls/server.crt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic-network/crypto-config/peerOrganizations/org1.example.com/users/User1@org1.example.com/tls/server.key" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic-network/docker-compose.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic-network/generate.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic-network/init.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic-network/start.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic-network/stop.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic-network/teardown.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chaincode/vote/vote.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chaincode/vote/vote_test.go" beforeDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/.tmp/" />
+    <ignored path="$PROJECT_DIR$/temp/" />
+    <ignored path="$PROJECT_DIR$/tmp/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="321035182">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="7" />
+          <entry key="project.open.time.1" value="1" />
+          <entry key="project.open.time.16" value="1" />
+          <entry key="project.open.time.25" value="1" />
+          <entry key="project.open.time.35" value="1" />
+          <entry key="project.open.time.39" value="1" />
+          <entry key="project.open.time.44" value="1" />
+          <entry key="project.open.time.55" value="1" />
+          <entry key="project.open.time.7" value="1" />
+          <entry key="project.open.time.79" value="1" />
+          <entry key="project.open.time.8" value="1" />
+          <entry key="project.opened" value="10" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="831685bab4382535d144be065a8ae66b1eea824c9c71b6c18dd63f5415a796f2-pub" value="1" />
+          <entry key="admin" value="1" />
+          <entry key="b" value="2" />
+          <entry key="html" value="25" />
+          <entry key="js" value="12" />
+          <entry key="json" value="1" />
+          <entry key="md" value="1" />
+          <entry key="sh" value="8" />
+          <entry key="ts" value="5" />
+          <entry key="txt" value="2" />
+          <entry key="url" value="1" />
+          <entry key="user1" value="1" />
+          <entry key="yaml" value="2" />
+          <entry key="yml" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="HTML" value="25" />
+          <entry key="JSON" value="1" />
+          <entry key="JavaScript" value="12" />
+          <entry key="PLAIN_TEXT" value="17" />
+          <entry key="TypeScript" value="5" />
+          <entry key="YAML" value="4" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="html" value="501" />
+          <entry key="js" value="2460" />
+          <entry key="sh" value="1" />
+          <entry key="txt" value="15" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="HTML" value="501" />
+          <entry key="JavaScript" value="2460" />
+          <entry key="PLAIN_TEXT" value="16" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.js.language.service.starts">
+        <counts>
+          <entry key="TypeScriptServerServiceImpl" value="3" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/controllers/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="320">
+              <caret line="394" lean-forward="true" selection-start-line="394" selection-end-line="394" />
+              <folding>
+                <element signature="e#4151#11606#0" />
+                <element signature="e#11636#11765#0" />
+                <element signature="e#11788#12544#0" />
+                <element signature="e#12573#13204#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/applyList.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="81" column="98" lean-forward="true" selection-start-line="81" selection-start-column="98" selection-end-line="81" selection-end-column="98" />
+              <folding>
+                <element signature="n#style#0;n#ul#0;n#li#0;n#ul#0;n#li#0;n#ul#0;n#li#0;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/b">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/test.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="250">
+              <caret line="16" column="20" lean-forward="true" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/a.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="11" selection-start-column="11" selection-end-column="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="257">
+              <caret line="18" column="24" selection-start-line="18" selection-start-column="24" selection-end-line="18" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/login.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="175">
+              <caret line="7" column="11" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/routers/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="12" column="40" lean-forward="true" selection-start-line="12" selection-start-column="40" selection-end-line="12" selection-end-column="40" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/test2.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="200">
+              <caret line="8" column="10" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/test1.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1375">
+              <caret line="73" column="35" selection-start-line="73" selection-start-column="35" selection-end-line="73" selection-end-column="35" />
+              <folding>
+                <element signature="n#head#0;n#html#0;n#!!top" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>result</find>
+      <find>request</find>
+      <find>user_from_store</find>
+      <find>state_store</find>
+      <find>hfc-key-store</find>
+      <find>chaincode</find>
+      <find>Query has completed, checking results</find>
+      <find>Verify()</find>
+      <find>col-md-2</find>
+      <find>saveUser</find>
+    </findStrings>
+    <dirStrings>
+      <dir>D:\share\voteApp</dir>
+    </dirStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/app/views/test01.html" />
+        <option value="$PROJECT_DIR$/app/views/test.html" />
+        <option value="$PROJECT_DIR$/app/views/error.html" />
+        <option value="$PROJECT_DIR$/app/views/vote.html" />
+        <option value="$PROJECT_DIR$/app/index.js" />
+        <option value="$PROJECT_DIR$/app/views/2实例14.html" />
+        <option value="$PROJECT_DIR$/app/views/you.html" />
+        <option value="$PROJECT_DIR$/app/views/index.html" />
+        <option value="$PROJECT_DIR$/app/controllers/a.txt" />
+        <option value="$PROJECT_DIR$/app/enrollAdmin.js" />
+        <option value="$PROJECT_DIR$/../basic-network/startFabric.sh" />
+        <option value="$PROJECT_DIR$/app/views/test1.html" />
+        <option value="$PROJECT_DIR$/app/views/login.html" />
+        <option value="$PROJECT_DIR$/app/views/register.html" />
+        <option value="$PROJECT_DIR$/app/controllers/test.js" />
+        <option value="$PROJECT_DIR$/app/routers/index.js" />
+        <option value="$PROJECT_DIR$/app/views/test2.html" />
+        <option value="$PROJECT_DIR$/app/controllers/index.js" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodeModulesDirectoryManager">
+    <handled-path value="$PROJECT_DIR$/app/node_modules" />
+  </component>
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths>
+      <path value="$PROJECT_DIR$/app/package.json" />
+    </packageJsonPaths>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="265" />
+    <option name="y" value="42" />
+    <option name="width" value="1122" />
+    <option name="height" value="688" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="voteApp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="voteApp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="voteApp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="voteApp" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="voteApp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="voteApp" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="controllers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="voteApp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="voteApp" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="routers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="voteApp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="voteApp" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope">
+        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
+          <expand>
+            <path>
+              <item name="voteApp" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="ts.external.directory.path" value="F:\WebStorm 2018.2.6\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\share\voteApp\app\views" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="test.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" nameIsGenerated="true" path-to-js-file="test.js" working-dir="$PROJECT_DIR$/app/controllers">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Node.js.test.js" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1cf4d127-d284-4e28-ba94-6ab10a9ab472" name="Default Changelist" comment="" />
+      <created>1542694673172</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1542694673172</updated>
+      <workItem from="1542694676725" duration="21256000" />
+      <workItem from="1542777022337" duration="3150000" />
+      <workItem from="1542855058380" duration="7418000" />
+      <workItem from="1542896095165" duration="22390000" />
+      <workItem from="1543229424204" duration="8884000" />
+      <workItem from="1545114199174" duration="4425000" />
+      <workItem from="1545375802365" duration="10840000" />
+      <workItem from="1545548709494" duration="10216000" />
+      <workItem from="1545918005666" duration="5613000" />
+      <workItem from="1547606933417" duration="13298000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="107495000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15550596" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3295082" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.03442623" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.3295082" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="TypeScript" order="11" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.sh" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/app/controllers/test.html" />
+    <entry file="file://$PROJECT_DIR$/app/views/error.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="9" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/package.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/hello.ejs" />
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/koa通过bodyparser无法获取ctx.request.body,必须通过json转换？.url" />
+    <entry file="file://$PROJECT_DIR$/app/package-lock.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="155800">
+          <caret line="6232" column="26" selection-start-line="6232" selection-start-column="26" selection-end-line="6232" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/basic-network/generate.sh" />
+    <entry file="file://$PROJECT_DIR$/basic-network/configtx.yaml" />
+    <entry file="file://$PROJECT_DIR$/basic-network/crypto-config.yaml" />
+    <entry file="file://$PROJECT_DIR$/app/node_modules/fabric-client/types/base.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="13" column="22" lean-forward="true" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/basic-network/docker-compose.yml" />
+    <entry file="file://$PROJECT_DIR$/basic-network/init.sh" />
+    <entry file="file://$PROJECT_DIR$/basic-network/README.md" />
+    <entry file="file://$PROJECT_DIR$/basic-network/start.sh" />
+    <entry file="file://$PROJECT_DIR$/app/startFabric.sh" />
+    <entry file="file://$PROJECT_DIR$/../basic-network/startFabric.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="16" column="10" selection-start-line="16" selection-start-column="10" selection-end-line="16" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../basic-network/start.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-25">
+          <caret line="10" column="25" lean-forward="true" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/hfc-key-store/831685bab4382535d144be065a8ae66b1eea824c9c71b6c18dd63f5415a796f2-pub" />
+    <entry file="file://$PROJECT_DIR$/app/hfc-key-store/admin">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="241" selection-start-column="897" selection-end-column="899" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/hfc-key-store/user1">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="71" selection-start-column="71" selection-end-column="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/enrollAdmin.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="900">
+          <caret line="36" column="22" selection-start-line="36" selection-start-column="22" selection-end-line="36" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/registerUser.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1750">
+          <caret line="70" selection-start-line="70" selection-end-line="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/node_modules/fabric-client/types/index.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5225">
+          <caret line="210" column="40" selection-start-line="210" selection-start-column="40" selection-end-line="210" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/node_modules/@types/node/index.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6175">
+          <caret line="281" column="10" selection-start-line="281" selection-start-column="10" selection-end-line="281" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/hello.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="8" column="30" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/you.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="800">
+          <caret line="32" column="42" selection-start-line="32" selection-start-column="42" selection-end-line="32" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/register.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="2" column="8" selection-start-line="2" selection-start-column="8" selection-end-line="2" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/applyMoney.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="7" column="47" selection-start-line="7" selection-start-column="47" selection-end-line="7" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/companyInfo.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="206">
+          <caret line="15" column="19" lean-forward="true" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/vote.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="54" column="10" lean-forward="true" selection-start-line="54" selection-start-column="10" selection-end-line="54" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="257">
+          <caret line="18" column="24" selection-start-line="18" selection-start-column="24" selection-end-line="18" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/a.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="11" selection-start-column="11" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="16" column="20" lean-forward="true" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/b">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/test1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1375">
+          <caret line="73" column="35" selection-start-line="73" selection-start-column="35" selection-end-line="73" selection-end-column="35" />
+          <folding>
+            <element signature="n#head#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/routers/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="12" column="40" lean-forward="true" selection-start-line="12" selection-start-column="40" selection-end-line="12" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="7" column="11" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/test2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="8" column="10" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/applyList.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="81" column="98" lean-forward="true" selection-start-line="81" selection-start-column="98" selection-end-line="81" selection-end-column="98" />
+          <folding>
+            <element signature="n#style#0;n#ul#0;n#li#0;n#ul#0;n#li#0;n#ul#0;n#li#0;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="394" lean-forward="true" selection-start-line="394" selection-end-line="394" />
+          <folding>
+            <element signature="e#4151#11606#0" />
+            <element signature="e#11636#11765#0" />
+            <element signature="e#11788#12544#0" />
+            <element signature="e#12573#13204#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

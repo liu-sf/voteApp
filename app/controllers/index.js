@@ -2,10 +2,15 @@ const Fabric_Client = require('fabric-client');
 const path          = require('path');
 const os = require('os')
 const util = require('util')
+const fs = require('fs');
+const bodyParser = require('koa-bodyparser')
+
+
 
 module.exports = {
 
-    async indexPage ( ctx ) {
+    async vote ( ctx ) {
+    	//获取所有用户的票数
         const title = 'admin page'
         let result = ''
 
@@ -19,7 +24,8 @@ module.exports = {
 
 		//
 		var member_user = null;
-		var store_path = path.join(os.homedir(), '.hfc-key-store');
+	//	var store_path = path.join(os.homedir(), '.hfc-key-store');
+		var store_path = path.join(__dirname, '../hfc-key-store');
 		console.log('Store path:'+store_path);
 		var tx_id = null;
 
@@ -64,6 +70,9 @@ module.exports = {
 		            result = "Could not locate tuna"
 		        } else {
 		            console.log("Response is ", query_responses[0].toString());
+			    console.log("channel's name is",channel.getName());
+			    console.log("channel's Organizations is",channel.getOrganizations().toString('utf8'));
+			    // console.log("*****",typeof(JSON.stringify(channel.getOrderers())));
                     return query_responses[0].toString()
 		        }
 		    } else {
@@ -76,14 +85,48 @@ module.exports = {
             
 		});
 
-        await ctx.render('index', {
+		//查询区块信息
+		var p1 = channel.queryBlock(1)
+		p1.then(function (data) {
+			console.log("查询的区块信息：")
+			console.log(data)
+        },function (err) {
+			console.log("查询区块失败")
+        })
+
+		channel.queryBlockByTxID(1)
+			.then(function (data) {
+			console.log(data)
+       		 },function (err) {
+			console.log("查询区块txid失败")
+			})
+
+		channel.queryInfo()
+			.then(function (data) {
+                console.log("查询链内高度：")
+				console.log(data)
+				// console.log(data.height)
+            },function (err) {
+				console.log("查询链内高度失败")
+            })
+
+		fabric_client.getStateStore().getValue()
+			.then(function (data) {
+				console.log(data)
+            },function (err) {
+				// console.log()
+            })
+
+        await ctx.render('vote', {
             title, result
         })
     },
 
     async saveUser (ctx) {
+    	//投票
         const queryBody = ctx.request.query;
         const username = queryBody.username;
+		console.log("\n");
         console.log(`username.....${username}`)
 
         var fabric_client = new Fabric_Client();
@@ -96,7 +139,8 @@ module.exports = {
 		channel.addOrderer(order);
 
 		var member_user = null;
-		var store_path = path.join(os.homedir(), '.hfc-key-store');
+	//	var store_path = path.join(os.homedir(), '.hfc-key-store');
+		var store_path = path.join(__dirname, '../hfc-key-store');
 		console.log('Store path:'+store_path);
 		var tx_id = null;
 
@@ -235,6 +279,147 @@ module.exports = {
 		});
 
         ctx.body = result
-    }
+    },
 
+    async register ( ctx ) {
+        const title = 'register page'
+        const message = 'message'
+        await ctx.render('register',{title,message})
+	},
+
+	async login ( ctx ){
+    	const title = 'login page';
+    	const message = '';
+
+        // const queryBody = ctx.request.query;
+        // const username = queryBody.username;
+        // const password = queryBody.password;
+
+        // const body = ctx.request.body;
+        // const username = body.username;
+        // const password = body.password;
+        // console.log('body,'+username);
+        // console.log('body,'+password);
+
+        //  console.log(`login_username.....${username}`);
+        // console.log(`login_password.....${password}`);
+        // console.log("方法，"+ctx.method);
+        // ctx.body =  ctx.request.body;
+        // console.log("ctx.req,"+ctx.req);
+        console.log("*************");
+
+
+        await ctx.render('login',{title,message});
+	},
+
+    async login_post(ctx) {
+        console.log('接收到post请求');
+
+        //koa通过bodyparser无法获取ctx.req.body的值，必须通过json转换？转换成json字符串
+        var str = JSON.stringify(ctx.request.body);
+        var obj = JSON.parse(str);
+        var uname = obj.uname;
+        var upwd = obj.upwd;
+        var jb = {"a": 123, "b": 123, "c": 123};
+        console.log('1.' + JSON.stringify(ctx.request.body));
+        // console.log('2.'+typeof (JSON.stringify(ctx.request.body)));
+        // console.log('3.'+obj.uname);
+        // console.log('3.'+obj.upwd);
+        ctx.body = {
+            status: 200,
+            description: 'ok',
+            result: str
+        };
+
+
+    },
+
+    async indexPage ( ctx ) {
+        const title = 'index page'
+        await ctx.render('index',{
+            title
+        })
+	},
+
+    async test1 ( ctx ) {
+
+        await ctx.render('test1')
+    },
+    async test2 ( ctx ) {
+        let result = ''
+
+        var fabric_client = new Fabric_Client();
+        var key = "name"
+
+        // setup the fabric network
+        var channel = fabric_client.newChannel('mychannel');
+        var peer = fabric_client.newPeer('grpc://localhost:7051');
+        channel.addPeer(peer);
+
+        //
+        var member_user = null;
+        //	var store_path = path.join(os.homedir(), '.hfc-key-store');
+        var store_path = path.join(__dirname, '../hfc-key-store');
+        console.log('Store path:'+store_path);
+        var tx_id = null;
+
+        // create the key value store as defined in the fabric-client/config/default.json 'key-value-store' setting
+        result = await Fabric_Client.newDefaultKeyValueStore({ path: store_path
+        }).then((state_store) => {
+            // assign the store to the fabric client
+            fabric_client.setStateStore(state_store);
+            var crypto_suite = Fabric_Client.newCryptoSuite();
+            // use the same location for the state store (where the users' certificate are kept)
+            // and the crypto store (where the users' keys are kept)
+            var crypto_store = Fabric_Client.newCryptoKeyStore({path: store_path});
+            crypto_suite.setCryptoKeyStore(crypto_store);
+            fabric_client.setCryptoSuite(crypto_suite);
+
+            // get the enrolled user from persistence, this user will sign all requests
+            return fabric_client.getUserContext('user1', true);
+        }).then((user_from_store) => {
+            if (user_from_store && user_from_store.isEnrolled()) {
+                console.log('Successfully loaded user1 from persistence');
+                member_user = user_from_store;
+            } else {
+                throw new Error('Failed to get user1.... run registerUser.js');
+            }
+
+            // queryTuna - requires 1 argument, ex: args: ['4'],
+            const request = {
+                chaincodeId: 'chaincode_example02',
+                txId: tx_id,
+                fcn: 'set',
+                args: ["a","250"]
+            };
+
+            // send the query proposal to the peer
+            return channel.queryByChaincode(request);
+        }).then((query_responses) => {
+            console.log("Query has completed, checking results");
+            // query_responses could have more than one  results if there multiple peers were used as targets
+            if (query_responses && query_responses.length == 1) {
+                if (query_responses[0] instanceof Error) {
+                    console.error("error from query = ", query_responses[0]);
+                    result = "Could not locate tuna"
+                } else {
+                    console.log("Response is ", query_responses[0].toString());
+                    console.log("channel's name is",channel.getName());
+                    console.log("channel's Organizations is",channel.getOrganizations().toString('utf8'));
+                    // console.log("*****",typeof(JSON.stringify(channel.getOrderers())));
+                    return query_responses[0].toString()
+                }
+            } else {
+                console.log("No payloads were returned from query");
+                result = "Could not locate tuna"
+            }
+        }).catch((err) => {
+            console.error('Failed to query successfully :: ' + err);
+            result = 'Failed to query successfully :: ' + err
+
+        });
+        await ctx.render('test2',{
+            result
+		})
+    }
 }

@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+  <title>区块链供应链金融系统</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+<style type="text/css">
+   
+  .navgation{
+    background: #2894ff;
+    color: #ffffff;
+    padding: 10px;
+    font-size: 20px;
+  }
+
+  .setList{
+    float: right;
+  }
+  .welcomeWord{
+    font-size: 14px;
+    
+  }
+ 
+ 
+</style>
+
+<body>
+
+    <div class="navgation" role="navigation">
+        <div class="row">
+        <div class="col-md-4">
+          区块链供应链金融系统
+        </div>
+        <div class="btn-group col-md-8">
+          <div class="setList">
+            <span class="welcomeWord">欢迎您，xxx</span>
+            <button class="btn btn-default btn-md dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false">
+              <span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
+            </button>
+            <ul class="dropdown-menu dropdown-menu-right " aria-labelledby="dLabel">
+              <li><a href="#">更换角色</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="#">退出登录</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+  <div>
+    <div class="col-md-2">
+      <div>
+        <div class="row">
+
+          <ul id="main-nav" class="nav  nav-stacked" style="">
+            <li>
+              <a href="#systemSetting" class="nav-header collapsed nav-tabs" data-toggle="collapse">
+                <i class="glyphicon glyphicon-cog active"></i>
+                菜单
+                <span class="pull-right glyphicon glyphicon-chevron-down"></span>
+              </a>
+              <ul id="systemSetting" class="nav nav list collapse secondmenu" style="height:0px;">
+
+                <li>
+                  <ul id="nav1" class="nav nav-stacked">
+                    <li>
+                      <a href="#systemSetting2" class="nav-header collapsed nav-tabs" data-toggle="collapse">
+                        <i class="glyphicon glyphicon-cog active"></i>
+                        融资管理
+                        <span class="pull-right glyphicon glyphicon-chevron-down"></span>
+                      </a>
+                      <ul id="systemSetting2" class="nav nav list collapse secondmenu" style="height:0px;">
+
+                        <li><a href="applyMoney.html"><i class="glyphicon glyphicon-user"></i>融资申请</a></li>
+
+                        <li><a href="applyList.html"><i class="glyphicon glyphicon-th-list "></i>融资项目列表</a></li>
+
+                      </ul>
+                    </li>
+
+                  </ul>
+                </li>
+
+                <li class="nav-tabs"><a href="#"><i class="glyphicon glyphicon-th-list"></i>菜单</a></li>
+                <li class="nav-tabs"><a href="companyInfo.html"><i class="glyphicon glyphicon-asterisk "></i>企业信息</a></li>
+              </ul>
+            </li>
+            <li>
+
+          </ul>
+        </div>
+
+      </div>
+
+    </div>
+    <div class="col-md-8">
+      <!-- 保理融资申请单 -->
+      <div class="panel panel-default">
+        <div class="panel-heading">
+            保理融资申请单
+        </div>
+        <div class="panel-body">
+            <form> 
+                <div class="form-group">
+                  <label for="creditAmount">信用剩余额度</label>
+  
+                  <div class="input-group">
+                      <div class="input-group-addon">￥</div>
+                      <input type="text" class="form-control" id="creditAmount" readonly>
+                      <div class="input-group-addon">.00</div>
+                  </div>
+                
+                </div>
+                <div class="form-group">
+                  <label for="applyAmount">融资申请金额</label>
+                  <div class="input-group">
+                      <div class="input-group-addon">￥</div>
+                      <input type="text" class="form-control" id="applyAmount" >
+                      <div class="input-group-addon">.00</div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="finTerm">融资期限</label>
+                  <div class="input-group">
+                      <select class="form-control">
+                          <option>1</option>
+                          <option>2</option>
+                          <option>3</option>
+                          <option>4</option>
+                          <option>5</option>
+                        </select>
+                      <div class="input-group-addon">月</div>
+                  </div>
+                </div>
+                
+                <button type="submit" class="btn btn-success">提交</button>
+                <button type="reset" class="btn btn-danger">重填</button>
+            </form>
+        </div>
+      </div>
+      <!-- 保理融资申请单 end -->
+
+      <!-- 赊销供货单 -->
+      <div class="panel panel-default">
+          <div class="panel-heading">
+              赊销供货单
+          </div>
+          <div class="panel-body">
+              <form> 
+                  <div class="form-group">
+                    <label for="creditAmount">信用剩余额度</label>
+    
+                    <div class="input-group">
+                        <div class="input-group-addon">￥</div>
+                        <input type="text" class="form-control" id="creditAmount" >
+                        <div class="input-group-addon">.00</div>
+                    </div>
+                  
+                  </div>
+                  <div class="form-group">
+                    <label for="applyAmount">融资申请金额</label>
+                    <div class="input-group">
+                        <div class="input-group-addon">￥</div>
+                        <input type="text" class="form-control" id="applyAmount" >
+                        <div class="input-group-addon">.00</div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="finTerm">融资期限</label>
+                    <div class="input-group">
+                        <select class="form-control">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                          </select>
+                        <div class="input-group-addon">月</div>
+                    </div>
+                  </div>
+                  
+                  <button type="submit" class="btn btn-success">提交</button>
+                  <button type="reset" class="btn btn-danger">重填</button>
+              </form>
+          </div>
+        </div>
+        <!-- 赊销供货单 end -->
+
+
+    </div>
+  </div>
+
+
+
+
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+
+</html>
