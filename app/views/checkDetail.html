@@ -135,11 +135,17 @@
         <div class="panel-body">
             <form> 
                 <div class="form-group">
+                    <label for="customerName">企业名</label>
+                    <div class="input-group">
+                        <input type="text" class="form-control" id="customerName" value="xxxx" readonly>
+                        <div class="input-group-addon"></div>                    
+                    </div>
+                </div>
+                <div class="form-group">
                   <label for="creditAmount">信用剩余额度</label>
-  
                   <div class="input-group">
                       <div class="input-group-addon">￥</div>
-                      <input type="text" class="form-control" id="creditAmount" readonly>
+                      <input type="text" class="form-control" id="creditAmount" value="10000" readonly>
                       <div class="input-group-addon">.00</div>
                   </div>
                 
@@ -166,8 +172,8 @@
                   </div>
                 </div>
                 
-                <button type="submit" class="btn btn-success">提交</button>
-                <button type="reset" class="btn btn-danger">重填</button>
+                <button type="submit" class="btn btn-success">审核通过</button>
+                <button type="reset" class="btn btn-danger">审核拒绝</button>
             </form>
         </div>
       </div>
@@ -185,7 +191,7 @@
     
                     <div class="input-group">
                         <div class="input-group-addon">￥</div>
-                        <input type="text" class="form-control" id="creditAmount" >
+                        <input type="text" class="form-control" id="creditAmount" value="10000" readonly>
                         <div class="input-group-addon">.00</div>
                     </div>
                   
@@ -212,8 +218,8 @@
                     </div>
                   </div>
                   
-                  <button type="submit" class="btn btn-success">提交</button>
-                  <button type="reset" class="btn btn-danger">重填</button>
+                  <button type="submit" class="btn btn-success">审核通过</button>
+                  <button type="reset" class="btn btn-danger">审核拒绝</button>
               </form>
           </div>
         </div>

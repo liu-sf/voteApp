@@ -1,94 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1cf4d127-d284-4e28-ba94-6ab10a9ab472" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/views/applyList.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/applyMoney.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/companyInfo.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/error.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/register.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/test2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/vote.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/enrollAdmin.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/enrollAdmin.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/registerUser.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/registerUser.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/routers/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/routers/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/startFabric.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/hello.ejs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/index.ejs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/basic-network/.env" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/basic-network/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/basic-network/config/channel.tx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/basic-network/config/genesis.block" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/basic-network/configtx.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/basic-network/crypto-config.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/basic-network/crypto-config/ordererOrganizations/example.com/ca/a0606a4a860a1e31c90a23788da6f3b6b74925ed0d23061af4899409ba46ae6a_sk" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/basic-network/crypto-config/ordererOrganizations/example.com/ca/ca.example.com-cert.pem" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/basic-network/crypto-config/ordererOrganizations/example.com/msp/admincerts/Admin@example.com-cert.pem" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/basic-network/crypto-config/ordererOrganizations/example.com/msp/cacerts/ca.example.com-cert.pem" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/basic-network/crypto-config/ordererOrganizations/example.com/msp/tlscacerts/tlsca.example.com-cert.pem" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/basic-network/crypto-config/ordererOrganizations/example.com/orderers/orderer.example.com/msp/admincerts/Admin@example.com-cert.pem" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/basic-network/crypto-config/ordererOrganizations/example.com/orderers/orderer.example.com/msp/cacerts/ca.example.com-cert.pem" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/basic-network/crypto-config/ordererOrganizations/example.com/orderers/orderer.example.com/msp/keystore/4d2f776c0fef8eac3f460a7c3558dc7859c4fe458e262e674a6c23f242ea33d1_sk" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/basic-network/crypto-config/ordererOrganizations/example.com/orderers/orderer.example.com/msp/signcerts/orderer.example.com-cert.pem" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/basic-network/crypto-config/ordererOrganizations/example.com/orderers/orderer.example.com/msp/tlscacerts/tlsca.example.com-cert.pem" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/basic-network/crypto-config/ordererOrganizations/example.com/orderers/orderer.example.com/tls/ca.crt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/basic-network/crypto-config/ordererOrganizations/example.com/orderers/orderer.example.com/tls/server.crt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/basic-network/crypto-config/ordererOrganizations/example.com/orderers/orderer.example.com/tls/server.key" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/basic-network/crypto-config/ordererOrganizations/example.com/tlsca/8d2186556c85d515e737d0c0da8d0d7672785b685cb503bcb95e53dcc279fba7_sk" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/basic-network/crypto-config/ordererOrganizations/example.com/tlsca/tlsca.example.com-cert.pem" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/basic-network/crypto-config/ordererOrganizations/example.com/users/Admin@example.com/msp/admincerts/Admin@example.com-cert.pem" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/basic-network/crypto-config/ordererOrganizations/example.com/users/Admin@example.com/msp/cacerts/ca.example.com-cert.pem" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/basic-network/crypto-config/ordererOrganizations/example.com/users/Admin@example.com/msp/keystore/1deeab5433fa6e5f045eb763109d6165268fba153211af1281f00d45f54b1022_sk" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/basic-network/crypto-config/ordererOrganizations/example.com/users/Admin@example.com/msp/signcerts/Admin@example.com-cert.pem" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/basic-network/crypto-config/ordererOrganizations/example.com/users/Admin@example.com/msp/tlscacerts/tlsca.example.com-cert.pem" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/basic-network/crypto-config/ordererOrganizations/example.com/users/Admin@example.com/tls/ca.crt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/basic-network/crypto-config/ordererOrganizations/example.com/users/Admin@example.com/tls/server.crt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/basic-network/crypto-config/ordererOrganizations/example.com/users/Admin@example.com/tls/server.key" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/basic-network/crypto-config/peerOrganizations/org1.example.com/ca/4239aa0dcd76daeeb8ba0cda701851d14504d31aad1b2ddddbac6a57365e497c_sk" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/basic-network/crypto-config/peerOrganizations/org1.example.com/ca/ca.org1.example.com-cert.pem" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/basic-network/crypto-config/peerOrganizations/org1.example.com/ca/org1.example.com-cert.pem" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/basic-network/crypto-config/peerOrganizations/org1.example.com/msp/admincerts/Admin@org1.example.com-cert.pem" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/basic-network/crypto-config/peerOrganizations/org1.example.com/msp/cacerts/ca.org1.example.com-cert.pem" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/basic-network/crypto-config/peerOrganizations/org1.example.com/msp/tlscacerts/tlsca.org1.example.com-cert.pem" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/basic-network/crypto-config/peerOrganizations/org1.example.com/peers/peer0.org1.example.com/msp/admincerts/Admin@org1.example.com-cert.pem" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/basic-network/crypto-config/peerOrganizations/org1.example.com/peers/peer0.org1.example.com/msp/cacerts/ca.org1.example.com-cert.pem" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/basic-network/crypto-config/peerOrganizations/org1.example.com/peers/peer0.org1.example.com/msp/keystore/46be1d569fe68f33e517c9e0072a0ccfbfb42727480fb8c8d0223af321a7893d_sk" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/basic-network/crypto-config/peerOrganizations/org1.example.com/peers/peer0.org1.example.com/msp/signcerts/peer0.org1.example.com-cert.pem" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/basic-network/crypto-config/peerOrganizations/org1.example.com/peers/peer0.org1.example.com/msp/tlscacerts/tlsca.org1.example.com-cert.pem" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/basic-network/crypto-config/peerOrganizations/org1.example.com/peers/peer0.org1.example.com/tls/ca.crt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/basic-network/crypto-config/peerOrganizations/org1.example.com/peers/peer0.org1.example.com/tls/server.crt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/basic-network/crypto-config/peerOrganizations/org1.example.com/peers/peer0.org1.example.com/tls/server.key" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/basic-network/crypto-config/peerOrganizations/org1.example.com/tlsca/ed3fd82393e95fc2c475afc113c8d2c591f745d1babc4d6d9cce0a1acc168acb_sk" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/basic-network/crypto-config/peerOrganizations/org1.example.com/tlsca/tlsca.org1.example.com-cert.pem" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/basic-network/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/admincerts/Admin@org1.example.com-cert.pem" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/basic-network/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/cacerts/ca.org1.example.com-cert.pem" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/basic-network/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/keystore/cd96d5260ad4757551ed4a5a991e62130f8008a0bf996e4e4b84cd097a747fec_sk" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/basic-network/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/signcerts/Admin@org1.example.com-cert.pem" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/basic-network/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/tlscacerts/tlsca.org1.example.com-cert.pem" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/basic-network/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/tls/ca.crt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/basic-network/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/tls/server.crt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/basic-network/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/tls/server.key" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/basic-network/crypto-config/peerOrganizations/org1.example.com/users/User1@org1.example.com/msp/admincerts/User1@org1.example.com-cert.pem" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/basic-network/crypto-config/peerOrganizations/org1.example.com/users/User1@org1.example.com/msp/cacerts/ca.org1.example.com-cert.pem" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/basic-network/crypto-config/peerOrganizations/org1.example.com/users/User1@org1.example.com/msp/keystore/c75bd6911aca808941c3557ee7c97e90f3952e379497dc55eb903f31b50abc83_sk" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/basic-network/crypto-config/peerOrganizations/org1.example.com/users/User1@org1.example.com/msp/signcerts/User1@org1.example.com-cert.pem" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/basic-network/crypto-config/peerOrganizations/org1.example.com/users/User1@org1.example.com/msp/tlscacerts/tlsca.org1.example.com-cert.pem" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/basic-network/crypto-config/peerOrganizations/org1.example.com/users/User1@org1.example.com/tls/ca.crt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/basic-network/crypto-config/peerOrganizations/org1.example.com/users/User1@org1.example.com/tls/server.crt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/basic-network/crypto-config/peerOrganizations/org1.example.com/users/User1@org1.example.com/tls/server.key" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/basic-network/docker-compose.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/basic-network/generate.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/basic-network/init.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/basic-network/start.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/basic-network/stop.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/basic-network/teardown.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chaincode/vote/vote.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chaincode/vote/vote_test.go" beforeDir="false" />
-    </list>
+    <list default="true" id="1cf4d127-d284-4e28-ba94-6ab10a9ab472" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -171,8 +84,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="320">
-              <caret line="394" lean-forward="true" selection-start-line="394" selection-end-line="394" />
+            <state relative-caret-position="370">
+              <caret line="393" column="14" lean-forward="true" selection-start-line="393" selection-start-column="14" selection-end-line="393" selection-end-column="14" />
               <folding>
                 <element signature="e#4151#11606#0" />
                 <element signature="e#11636#11765#0" />
@@ -334,9 +247,9 @@
       <path value="$PROJECT_DIR$/app/package.json" />
     </packageJsonPaths>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="265" />
-    <option name="y" value="42" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="-74" />
+    <option name="y" value="79" />
     <option name="width" value="1122" />
     <option name="height" value="688" />
   </component>
@@ -448,12 +361,12 @@
       <workItem from="1545375802365" duration="10840000" />
       <workItem from="1545548709494" duration="10216000" />
       <workItem from="1545918005666" duration="5613000" />
-      <workItem from="1547606933417" duration="13298000" />
+      <workItem from="1547606933417" duration="13731000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="107495000" />
+    <option name="totallyTimeSpent" value="107928000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -693,8 +606,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="394" lean-forward="true" selection-start-line="394" selection-end-line="394" />
+        <state relative-caret-position="370">
+          <caret line="393" column="14" lean-forward="true" selection-start-line="393" selection-start-column="14" selection-end-line="393" selection-end-column="14" />
           <folding>
             <element signature="e#4151#11606#0" />
             <element signature="e#11636#11765#0" />
