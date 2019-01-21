@@ -133,13 +133,13 @@
             保理融资申请单
         </div>
         <div class="panel-body">
-            <form> 
+            <form id="Form1" action="/applyMoney_post1" method="post">
                 <div class="form-group">
                   <label for="creditAmount">信用剩余额度</label>
   
                   <div class="input-group">
                       <div class="input-group-addon">￥</div>
-                      <input type="text" class="form-control" id="creditAmount" readonly>
+                      <input type="text" class="form-control" name="creditAmount" readonly>
                       <div class="input-group-addon">.00</div>
                   </div>
                 
@@ -148,19 +148,19 @@
                   <label for="applyAmount">融资申请金额</label>
                   <div class="input-group">
                       <div class="input-group-addon">￥</div>
-                      <input type="text" class="form-control" id="applyAmount" >
+                      <input type="text" class="form-control" name="applyAmount" >
                       <div class="input-group-addon">.00</div>
                   </div>
                 </div>
                 <div class="form-group">
                   <label for="finTerm">融资期限</label>
                   <div class="input-group">
-                      <select class="form-control">
-                          <option>1</option>
-                          <option>2</option>
-                          <option>3</option>
-                          <option>4</option>
-                          <option>5</option>
+                      <select class="form-control" name="month">
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                          <option value="3">3</option>
+                          <option value="4">4</option>
+                          <option value="5">5</option>
                         </select>
                       <div class="input-group-addon">月</div>
                   </div>
@@ -179,13 +179,13 @@
               赊销供货单
           </div>
           <div class="panel-body">
-              <form> 
+              <form id="Form2" action="/applyMoney_post2" method="post">
                   <div class="form-group">
                     <label for="creditAmount">信用剩余额度</label>
     
                     <div class="input-group">
                         <div class="input-group-addon">￥</div>
-                        <input type="text" class="form-control" id="creditAmount" >
+                        <input type="text" class="form-control" name="creditAmount" >
                         <div class="input-group-addon">.00</div>
                     </div>
                   
@@ -194,19 +194,19 @@
                     <label for="applyAmount">融资申请金额</label>
                     <div class="input-group">
                         <div class="input-group-addon">￥</div>
-                        <input type="text" class="form-control" id="applyAmount" >
+                        <input type="text" class="form-control" name="applyAmount" >
                         <div class="input-group-addon">.00</div>
                     </div>
                   </div>
                   <div class="form-group">
                     <label for="finTerm">融资期限</label>
                     <div class="input-group">
-                        <select class="form-control">
-                            <option>1</option>
-                            <option>2</option>
-                            <option>3</option>
-                            <option>4</option>
-                            <option>5</option>
+                        <select class="form-control" name="month">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
                           </select>
                         <div class="input-group-addon">月</div>
                     </div>

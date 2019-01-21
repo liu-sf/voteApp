@@ -5,7 +5,15 @@ const util = require('util')
 const fs = require('fs');
 const bodyParser = require('koa-bodyparser')
 
+// 中间层，用来连接数据库
+const Monk = require('monk')
+const mongodb = Monk('localhost/test') // test数据库
+// 读取table1集合
+const table1 = mongodb.get('table1')
+const table2 = mongodb.get('table2')
 
+//申请单编号
+let applyMoney_Num = 1
 
 module.exports = {
 
@@ -421,5 +429,53 @@ module.exports = {
         await ctx.render('test2',{
             result
 		})
+    },
+    async applyMoney ( ctx ) {
+        await ctx.render('applyMoney')
+    },
+    async applyMoney_post1 ( ctx ) {
+        await ctx.render('applyMoney')
+		// var formData = JSON.stringify( ctx.request.body)
+		var formData = ctx.request.body
+        formData.num = applyMoney_Num ++
+		console.log("这是post请求！"+formData);
+        table1.find()
+			.then(data => {
+                console.log(data)
+                // console.log( JSON.stringify(data))
+			}).catch(err => {
+            console.log("数据库读取失败")
+		})
+		table1.insert(formData)
+			.then(data =>{
+
+			}).catch(err => {
+            throw err;
+		})
+
+    },
+    async applyMoney_post2 ( ctx ) {
+        await ctx.render('applyMoney')
+        // var formData = JSON.stringify( ctx.request.body)
+        var formData = ctx.request.body
+        formData.num = applyMoney_Num ++
+        console.log("这是post请求！"+formData);
+        table2.insert(formData)
+            .then(data =>{
+
+            }).catch(err => {
+            throw err;
+        })
+
+    },
+    async applyList ( ctx ) {
+        await ctx.render('applyList')
+    },
+    async companyInfo ( ctx ) {
+        await ctx.render('companyInfo')
+    },
+    async todoList ( ctx ) {
+        await ctx.render('todoList')
     }
+
 }
