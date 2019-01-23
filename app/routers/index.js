@@ -17,7 +17,6 @@ router.get('/',IndexController.indexPage)
     .get('/applyList.html',IndexController.applyList)
     .get('/companyInfo.html',IndexController.companyInfo)
     .get('/todoList.html',IndexController.todoList)
-
-
-
+    .get('/checkDetail.html',IndexController.checkDetail)
+    .all('/yiyian',IndexController.yiyian)
 module.exports = router

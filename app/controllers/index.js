@@ -15,6 +15,7 @@ const table2 = mongodb.get('table2')
 //申请单编号
 let applyMoney_Num = 1
 
+
 module.exports = {
 
     async vote ( ctx ) {
@@ -434,10 +435,13 @@ module.exports = {
         await ctx.render('applyMoney')
     },
     async applyMoney_post1 ( ctx ) {
+        var apply_time = new Date()
         await ctx.render('applyMoney')
 		// var formData = JSON.stringify( ctx.request.body)
 		var formData = ctx.request.body
         formData.num = applyMoney_Num ++
+		formData.apply_time = apply_time.toLocaleString()
+		formData.status = false
 		console.log("这是post请求！"+formData);
         table1.find()
 			.then(data => {
@@ -455,10 +459,13 @@ module.exports = {
 
     },
     async applyMoney_post2 ( ctx ) {
+        var apply_time = new Date()
         await ctx.render('applyMoney')
         // var formData = JSON.stringify( ctx.request.body)
         var formData = ctx.request.body
         formData.num = applyMoney_Num ++
+        formData.apply_time = apply_time.toLocaleString()
+        formData.status = false
         console.log("这是post请求！"+formData);
         table2.insert(formData)
             .then(data =>{
@@ -475,7 +482,48 @@ module.exports = {
         await ctx.render('companyInfo')
     },
     async todoList ( ctx ) {
-        await ctx.render('todoList')
-    }
+        await table2.find()
+            .then(data => {
+                console.log(data)
+				items = data
+                // console.log( JSON.stringify(data))
+            }).catch(err => {
+            console.log("数据库读取失败")
+        })
+        await ctx.render('todoList',{
+            items:items
+		})
+
+
+    },
+    async checkDetail ( ctx ) {
+    	// const creditAmount = ctx.query.item.creditAmount
+    	// const applyAmount = ctx.query.item.applyAmount
+    	// const month = ctx.query.item.month
+		var id = ctx.query.id
+		var item
+		await table2.findOne(id)
+			.then(data =>{
+				// console.log(data)
+				item = data
+
+			}).catch(err =>{
+                console.log("失败！")
+				throw err
+
+			})
+
+		//creditAmount applyAmount month
+        await ctx.render('checkDetail',{
+            item
+		})
+    },
+	async yiyian ( ctx ) {
+    	if(ctx.request.method == "GET"){
+    		 await console.log("get请求")
+		}
+		console.log(ctx.request.method)
+    	await ctx.render('companyInfo')
+}
 
 }

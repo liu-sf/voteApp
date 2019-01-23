@@ -142,21 +142,24 @@
                     <td>产品名</td>
                     <td>申请时间</td>
                     <td>申请状态</td>
-                </tr>        
+                </tr>
+                <% items.forEach(function(item){%>
                 <tr>
-                    <td><a href="checkDetail.html">AC10001</a></td>
+                    <td><a href="checkDetail.html?id=<%= item._id%>">
+                        <%= item.apply_time %></a></td>
                     <td>广州xxxx有限公司</td>
                     <td>xxx</td>
                     <td>2013-05-03</td>
                     <td class="text-success">通过</td>         
                 </tr>
-                <tr>
-                    <td><a href="#">AC10002</a></td>
-                    <td>广州xxxx有限公司</td>
-                    <td>xxx</td>
-                    <td>2013-05-03</td>
-                    <td class="text-danger">未通过</td>                        
-                </tr>
+                <% }) %>
+                <!--<tr>-->
+                    <!--<td><a href="#">AC10002</a></td>-->
+                    <!--<td>广州xxxx有限公司</td>-->
+                    <!--<td>xxx</td>-->
+                    <!--<td>2013-05-03</td>-->
+                    <!--<td class="text-danger">未通过</td>                        -->
+                <!--</tr>-->
             </table>
         </div>
       </div>
@@ -167,13 +170,12 @@
   </div>
 
 
-
-
-
   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
   <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
   <!-- Include all compiled plugins (below), or include individual files as needed -->
   <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
 </body>
 
 </html>

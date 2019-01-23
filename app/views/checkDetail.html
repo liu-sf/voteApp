@@ -191,7 +191,8 @@
     
                     <div class="input-group">
                         <div class="input-group-addon">￥</div>
-                        <input type="text" class="form-control" id="creditAmount" value="10000" readonly>
+                        <!--<input type="text" class="form-control" id="creditAmount" value="10000" readonly>-->
+                        <input type="text" class="form-control" id="creditAmount" value=<%= item.creditAmount %> readonly>
                         <div class="input-group-addon">.00</div>
                     </div>
                   
@@ -200,26 +201,27 @@
                     <label for="applyAmount">融资申请金额</label>
                     <div class="input-group">
                         <div class="input-group-addon">￥</div>
-                        <input type="text" class="form-control" id="applyAmount" >
+                        <input type="text" class="form-control" id="applyAmount" value=<%= item.applyAmount %> readonly>
                         <div class="input-group-addon">.00</div>
                     </div>
                   </div>
                   <div class="form-group">
                     <label for="finTerm">融资期限</label>
                     <div class="input-group">
-                        <select class="form-control">
-                            <option>1</option>
-                            <option>2</option>
-                            <option>3</option>
-                            <option>4</option>
-                            <option>5</option>
-                          </select>
+                        <!--<select class="form-control" >-->
+                            <!--<option>1</option>-->
+                            <!--<option>2</option>-->
+                            <!--<option>3</option>-->
+                            <!--<option>4</option>-->
+                            <!--<option>5</option>-->
+                          <!--</select>-->
+                        <input type="text" class="form-control" id="month" value=<%= item.month %> readonly>
                         <div class="input-group-addon">月</div>
                     </div>
                   </div>
                   
-                  <button type="submit" class="btn btn-success">审核通过</button>
-                  <button type="reset" class="btn btn-danger">审核拒绝</button>
+                  <button type="submit" class="btn btn-success" onclick="access()">审核通过</button>
+                  <button type="reset" class="btn btn-danger" onclick="reject()">审核拒绝</button>
               </form>
           </div>
         </div>
@@ -230,13 +232,27 @@
   </div>
 
 
-
-
-
   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
   <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
   <!-- Include all compiled plugins (below), or include individual files as needed -->
   <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script>
+    function access()
+    {
+        $.ajax({
+            type: "get",
+            url: "/checkDetail.html",
+            data: {"status":true},
+            success: function (data ,textStatus, jqXHR)
+            {
+                alert("请求成功！")
+            },
+            error:function (XMLHttpRequest, textStatus, errorThrown) {
+                alert("请求失败！");
+            }
+        });
+    }
+</script>
 </body>
 
 </html>
