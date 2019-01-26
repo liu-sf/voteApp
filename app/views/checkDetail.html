@@ -128,61 +128,61 @@
     </div>
     <div class="col-md-8">
       <!-- 保理融资申请单 -->
-      <div class="panel panel-default">
-        <div class="panel-heading">
-            保理融资申请单
-        </div>
-        <div class="panel-body">
-            <form> 
-                <div class="form-group">
-                    <label for="customerName">企业名</label>
-                    <div class="input-group">
-                        <input type="text" class="form-control" id="customerName" value="xxxx" readonly>
-                        <div class="input-group-addon"></div>                    
-                    </div>
-                </div>
-                <div class="form-group">
-                  <label for="creditAmount">信用剩余额度</label>
-                  <div class="input-group">
-                      <div class="input-group-addon">￥</div>
-                      <input type="text" class="form-control" id="creditAmount" value="10000" readonly>
-                      <div class="input-group-addon">.00</div>
-                  </div>
-                
-                </div>
-                <div class="form-group">
-                  <label for="applyAmount">融资申请金额</label>
-                  <div class="input-group">
-                      <div class="input-group-addon">￥</div>
-                      <input type="text" class="form-control" id="applyAmount" >
-                      <div class="input-group-addon">.00</div>
-                  </div>
-                </div>
-                <div class="form-group">
-                  <label for="finTerm">融资期限</label>
-                  <div class="input-group">
-                      <select class="form-control">
-                          <option>1</option>
-                          <option>2</option>
-                          <option>3</option>
-                          <option>4</option>
-                          <option>5</option>
-                        </select>
-                      <div class="input-group-addon">月</div>
-                  </div>
-                </div>
-                
-                <button type="submit" class="btn btn-success">审核通过</button>
-                <button type="reset" class="btn btn-danger">审核拒绝</button>
-            </form>
-        </div>
-      </div>
+      <!--<div class="panel panel-default">-->
+        <!--<div class="panel-heading">-->
+            <!--保理融资申请单-->
+        <!--</div>-->
+        <!--<div class="panel-body">-->
+            <!--<form> -->
+                <!--<div class="form-group">-->
+                    <!--<label for="customerName">企业名</label>-->
+                    <!--<div class="input-group">-->
+                        <!--<input type="text" class="form-control" id="customerName" value="xxxx" readonly>-->
+                        <!--<div class="input-group-addon"></div>                    -->
+                    <!--</div>-->
+                <!--</div>-->
+                <!--<div class="form-group">-->
+                  <!--<label for="creditAmount">信用剩余额度</label>-->
+                  <!--<div class="input-group">-->
+                      <!--<div class="input-group-addon">￥</div>-->
+                      <!--<input type="text" class="form-control" id="creditAmount" value="10000" readonly>-->
+                      <!--<div class="input-group-addon">.00</div>-->
+                  <!--</div>-->
+                <!---->
+                <!--</div>-->
+                <!--<div class="form-group">-->
+                  <!--<label for="applyAmount">融资申请金额</label>-->
+                  <!--<div class="input-group">-->
+                      <!--<div class="input-group-addon">￥</div>-->
+                      <!--<input type="text" class="form-control" id="applyAmount" >-->
+                      <!--<div class="input-group-addon">.00</div>-->
+                  <!--</div>-->
+                <!--</div>-->
+                <!--<div class="form-group">-->
+                  <!--<label for="finTerm">融资期限</label>-->
+                  <!--<div class="input-group">-->
+                      <!--<select class="form-control">-->
+                          <!--<option>1</option>-->
+                          <!--<option>2</option>-->
+                          <!--<option>3</option>-->
+                          <!--<option>4</option>-->
+                          <!--<option>5</option>-->
+                        <!--</select>-->
+                      <!--<div class="input-group-addon">月</div>-->
+                  <!--</div>-->
+                <!--</div>-->
+                <!---->
+                <!--<button type="submit" class="btn btn-success">审核通过</button>-->
+                <!--<button type="reset" class="btn btn-danger">审核拒绝</button>-->
+            <!--</form>-->
+        <!--</div>-->
+      <!--</div>-->
       <!-- 保理融资申请单 end -->
 
       <!-- 赊销供货单 -->
       <div class="panel panel-default">
           <div class="panel-heading">
-              赊销供货单
+              保理融资申请单
           </div>
           <div class="panel-body">
               <form> 
@@ -220,7 +220,7 @@
                     </div>
                   </div>
                   
-                  <button type="submit" class="btn btn-success" onclick="access()">审核通过</button>
+                  <button type="reset" class="btn btn-success" onclick="access()">审核通过</button>
                   <button type="reset" class="btn btn-danger" onclick="reject()">审核拒绝</button>
               </form>
           </div>
@@ -240,9 +240,24 @@
     function access()
     {
         $.ajax({
-            type: "get",
-            url: "/checkDetail.html",
+            type: "post",
+            url: "/checkDetail.html?id=<%= item._id%>",
             data: {"status":true},
+            success: function (data ,textStatus, jqXHR)
+            {
+                alert("请求成功！正在转账")
+            },
+            error:function (XMLHttpRequest, textStatus, errorThrown) {
+                alert("请求失败！");
+            }
+        });
+    }
+    function reject()
+    {
+        $.ajax({
+            type: "post",
+            url: "/checkDetail.html?id=<%= item._id%>",
+            data: {"status":false},
             success: function (data ,textStatus, jqXHR)
             {
                 alert("请求成功！")
