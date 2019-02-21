@@ -44,9 +44,9 @@ docker exec -e "CORE_PEER_LOCALMSPID=Org2MSP" -e "CORE_PEER_MSPCONFIGPATH=/opt/g
 #docker exec -e "CORE_PEER_LOCALMSPID=Org1MSP" -e "CORE_PEER_MSPCONFIGPATH=/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp" cli peer chaincode invoke -o orderer.example.com:7050 -C mychannel -n vote -c '{"function":"getUserVote","Args":[""]}'
 
 #实例化chaincode_example02链码
-docker exec -e "CORE_PEER_LOCALMSPID=Org1MSP" -e "CORE_PEER_MSPCONFIGPATH=/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp" cli peer chaincode instantiate -o orderer.example.com:7050 -C mychannel -n chaincode_example02 -v 1.0 -c '{"Args":["init","a","100","b","200","c","100"]}' -P "OR ('Org1MSP.member','Org2MSP.member')"
+docker exec -e "CORE_PEER_LOCALMSPID=Org1MSP" -e "CORE_PEER_MSPCONFIGPATH=/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp" cli peer chaincode instantiate -o orderer.example.com:7050 -C mychannel -n chaincode_example02 -v 1.0 -c '{"Args":["init","supplier","100","bank","200","keywa","100"]}' -P "OR ('Org1MSP.member','Org2MSP.member')"
 sleep 10
-docker exec -e "CORE_PEER_LOCALMSPID=Org1MSP" -e "CORE_PEER_MSPCONFIGPATH=/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp" cli peer chaincode query -o orderer.example.com:7050 -C mychannel -n chaincode_example02 -c '{"Args":["query","a"]}'
+docker exec -e "CORE_PEER_LOCALMSPID=Org1MSP" -e "CORE_PEER_MSPCONFIGPATH=/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp" cli peer chaincode query -o orderer.example.com:7050 -C mychannel -n chaincode_example02 -c '{"Args":["query","supplier"]}'
 
 printf "\nTotal setup execution time : $(($(date +%s) - starttime)) secs ...\n\n\n"
 printf "Start by installing required packages run 'npm install'\n"
