@@ -3,7 +3,7 @@
 # 设置voteApp获得最高权限
 $ chmod -R 777 voteApp
 $ cd voteApp
-$ cd app
+
 # 删除 docker 容器
 $ docker rm -f $(docker ps -aq)
 # 启动 fabric 的网络
