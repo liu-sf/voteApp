@@ -480,7 +480,7 @@ module.exports = {
 
 }
 
-//查询账户余额操作 arg为账户名
+//查询账户余额操作 args为账户名
 function query( ){
     var fabric_client = new Fabric_Client();
     var key = "name"
@@ -538,6 +538,8 @@ function query( ){
         result = 'Failed to query successfully :: ' + err
     });
 }
+
+function(){}
 
 //转账函数 函数返回tx_id
 function invoke(){

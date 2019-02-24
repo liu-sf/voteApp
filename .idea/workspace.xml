@@ -81,7 +81,7 @@
         <counts>
           <entry key="3d7b67941d3d8822c61394949f76b3ed49728c4989cc64221fb1072545f25ee1-priv" value="5" />
           <entry key="html" value="1088" />
-          <entry key="js" value="5048" />
+          <entry key="js" value="5065" />
           <entry key="json" value="12" />
           <entry key="md" value="199" />
           <entry key="py" value="4" />
@@ -94,7 +94,7 @@
         <counts>
           <entry key="HTML" value="1092" />
           <entry key="JSON" value="12" />
-          <entry key="JavaScript" value="5048" />
+          <entry key="JavaScript" value="5065" />
           <entry key="PLAIN_TEXT" value="273" />
           <entry key="YAML" value="24" />
         </counts>
@@ -111,8 +111,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="767">
-              <caret line="542" column="17" selection-start-line="542" selection-start-column="17" selection-end-line="542" selection-end-column="17" />
+            <state relative-caret-position="355">
+              <caret line="541" column="12" lean-forward="true" selection-start-line="541" selection-start-column="12" selection-end-line="541" selection-end-column="12" />
               <folding>
                 <element signature="e#472#4694#0" />
                 <element signature="e#4721#13007#0" />
@@ -285,12 +285,12 @@
         <option value="$PROJECT_DIR$/app/routers/index.js" />
         <option value="$PROJECT_DIR$/app/views/test2.html" />
         <option value="$PROJECT_DIR$/basic-network/README.md" />
-        <option value="$PROJECT_DIR$/app/controllers/index.js" />
         <option value="$PROJECT_DIR$/basic-network/docker-compose.yml" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/app/hfc-key-store/aa.py" />
         <option value="$PROJECT_DIR$/app/hfc-key-store/3d7b67941d3d8822c61394949f76b3ed49728c4989cc64221fb1072545f25ee1-priv" />
         <option value="$PROJECT_DIR$/basic-network/startFabric.sh" />
+        <option value="$PROJECT_DIR$/app/controllers/index.js" />
       </list>
     </option>
   </component>
@@ -438,7 +438,7 @@
       <workItem from="1548406204400" duration="1609000" />
       <workItem from="1548407930725" duration="14588000" />
       <workItem from="1548473231665" duration="1197000" />
-      <workItem from="1550718908014" duration="13089000" />
+      <workItem from="1550718908014" duration="14839000" />
     </task>
     <task id="LOCAL-00001" summary="test the use of git">
       <created>1547802808745</created>
@@ -451,10 +451,11 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="219612000" />
+    <option name="totallyTimeSpent" value="221362000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21354167" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -779,8 +780,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="767">
-          <caret line="542" column="17" selection-start-line="542" selection-start-column="17" selection-end-line="542" selection-end-column="17" />
+        <state relative-caret-position="355">
+          <caret line="541" column="12" lean-forward="true" selection-start-line="541" selection-start-column="12" selection-end-line="541" selection-end-column="12" />
           <folding>
             <element signature="e#472#4694#0" />
             <element signature="e#4721#13007#0" />
