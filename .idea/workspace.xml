@@ -24,7 +24,7 @@
     <session id="321035182">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="11" />
+          <entry key="project.closed" value="12" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.107" value="1" />
           <entry key="project.open.time.16" value="1" />
@@ -40,7 +40,8 @@
           <entry key="project.open.time.7" value="1" />
           <entry key="project.open.time.79" value="1" />
           <entry key="project.open.time.8" value="1" />
-          <entry key="project.opened" value="15" />
+          <entry key="project.open.time.82" value="1" />
+          <entry key="project.opened" value="16" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -49,7 +50,7 @@
           <entry key="831685bab4382535d144be065a8ae66b1eea824c9c71b6c18dd63f5415a796f2-pub" value="1" />
           <entry key="admin" value="1" />
           <entry key="b" value="2" />
-          <entry key="go" value="3" />
+          <entry key="go" value="4" />
           <entry key="html" value="51" />
           <entry key="jpg" value="1" />
           <entry key="js" value="19" />
@@ -57,7 +58,7 @@
           <entry key="log" value="1" />
           <entry key="md" value="4" />
           <entry key="py" value="1" />
-          <entry key="sh" value="15" />
+          <entry key="sh" value="16" />
           <entry key="ts" value="5" />
           <entry key="txt" value="2" />
           <entry key="url" value="1" />
@@ -72,7 +73,7 @@
           <entry key="Image" value="1" />
           <entry key="JSON" value="6" />
           <entry key="JavaScript" value="19" />
-          <entry key="PLAIN_TEXT" value="32" />
+          <entry key="PLAIN_TEXT" value="34" />
           <entry key="TypeScript" value="5" />
           <entry key="YAML" value="5" />
         </counts>
@@ -80,23 +81,23 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="3d7b67941d3d8822c61394949f76b3ed49728c4989cc64221fb1072545f25ee1-priv" value="5" />
-          <entry key="html" value="1088" />
-          <entry key="js" value="5065" />
+          <entry key="html" value="1092" />
+          <entry key="js" value="5182" />
           <entry key="json" value="12" />
           <entry key="md" value="199" />
           <entry key="py" value="4" />
           <entry key="sh" value="14" />
           <entry key="txt" value="55" />
-          <entry key="yml" value="24" />
+          <entry key="yml" value="25" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="HTML" value="1092" />
+          <entry key="HTML" value="1096" />
           <entry key="JSON" value="12" />
-          <entry key="JavaScript" value="5065" />
+          <entry key="JavaScript" value="5182" />
           <entry key="PLAIN_TEXT" value="273" />
-          <entry key="YAML" value="24" />
+          <entry key="YAML" value="25" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.js.language.service.starts">
@@ -108,52 +109,39 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/controllers/index.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="355">
-              <caret line="541" column="12" lean-forward="true" selection-start-line="541" selection-start-column="12" selection-end-line="541" selection-end-column="12" />
-              <folding>
-                <element signature="e#472#4694#0" />
-                <element signature="e#4721#13007#0" />
-                <element signature="e#13034#13168#0" />
-                <element signature="e#13192#13959#0" />
-                <element signature="e#13988#14619#0" />
-                <element signature="e#14647#14754#0" />
-                <element signature="e#14778#14820#0" />
-                <element signature="e#14849#14895#0" />
-                <element signature="e#14929#15626#0" />
-                <element signature="e#15660#16143#0" />
-                <element signature="e#16170#16215#0" />
-                <element signature="e#16244#16368#0" />
-                <element signature="e#16394#16735#0" />
-                <element signature="e#16764#18326#0" />
-                <element signature="e#18349#18703#0" />
-                <element signature="n#!!block;n#query#0" />
-                <element signature="n#!!block;n#invoke#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/basic-network/startFabric.sh">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="52" column="12" lean-forward="true" selection-start-line="52" selection-start-column="12" selection-end-line="52" selection-end-column="12" />
+            <state relative-caret-position="1196">
+              <caret line="52" column="12" selection-start-line="52" selection-start-column="12" selection-end-line="52" selection-end-column="12" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/basic-network/start.sh">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="283">
+              <caret line="15" column="105" lean-forward="true" selection-start-line="15" selection-start-column="105" selection-end-line="15" selection-end-column="105" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/basic-network/docker-compose.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-620">
-              <caret line="72" column="23" selection-start-line="72" selection-start-column="23" selection-end-line="72" selection-end-column="23" />
+            <state relative-caret-position="326">
+              <caret line="266" column="13" lean-forward="true" selection-start-line="266" selection-start-column="13" selection-end-line="266" selection-end-column="13" />
               <folding>
+                <element signature="e#832#2172#0" />
+                <element signature="e#2177#3938#0" />
                 <element signature="e#3941#5640#0" />
                 <element signature="e#5643#7342#0" />
                 <element signature="e#7345#9046#0" />
+                <element signature="e#9050#9441#0" />
+                <element signature="e#9445#9809#0" />
+                <element signature="e#9813#10177#0" />
+                <element signature="e#10181#10545#0" />
               </folding>
             </state>
           </provider>
@@ -162,8 +150,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/test2.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="338">
-              <caret line="13" column="7" selection-start-line="13" selection-start-column="7" selection-end-line="13" selection-end-column="7" />
+            <state relative-caret-position="286">
+              <caret line="11" column="23" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -171,25 +159,21 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/test.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="125">
+            <state relative-caret-position="130">
               <caret line="5" column="23" selection-start-line="2" selection-start-column="40" selection-end-line="3" selection-end-column="42" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/hfc-key-store/3d7b67941d3d8822c61394949f76b3ed49728c4989cc64221fb1072545f25ee1-priv">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret line="5" selection-start-line="5" selection-end-line="5" />
-            </state>
-          </provider>
+        <entry file="file://$PROJECT_DIR$/chaincode/go/chaincode_example02_test.go">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/chaincode/go/chaincode_example02.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
+            <state relative-caret-position="506">
               <caret line="142" selection-start-line="142" selection-end-line="142" />
             </state>
           </provider>
@@ -198,7 +182,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/checkDetail.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-8">
+            <state relative-caret-position="5278">
               <caret line="203" column="107" selection-start-line="203" selection-start-column="96" selection-end-line="203" selection-end-column="107" />
             </state>
           </provider>
@@ -207,7 +191,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/applyList.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-8">
+            <state relative-caret-position="2444">
               <caret line="94" column="26" selection-start-line="94" selection-start-column="26" selection-end-line="94" selection-end-column="26" />
             </state>
           </provider>
@@ -216,7 +200,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/routers/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-8">
+            <state relative-caret-position="338">
               <caret line="13" column="18" selection-start-line="13" selection-start-column="11" selection-end-line="13" selection-end-column="26" />
             </state>
           </provider>
@@ -250,6 +234,7 @@
       <find>suppiler_result</find>
       <find>orderer</find>
       <find>username</find>
+      <find>tty</find>
     </findStrings>
     <dirStrings>
       <dir>D:\share\voteApp</dir>
@@ -283,14 +268,14 @@
         <option value="$PROJECT_DIR$/app/views/applyMoney.html" />
         <option value="$PROJECT_DIR$/app/views/checkDetail.html" />
         <option value="$PROJECT_DIR$/app/routers/index.js" />
-        <option value="$PROJECT_DIR$/app/views/test2.html" />
         <option value="$PROJECT_DIR$/basic-network/README.md" />
-        <option value="$PROJECT_DIR$/basic-network/docker-compose.yml" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/app/hfc-key-store/aa.py" />
         <option value="$PROJECT_DIR$/app/hfc-key-store/3d7b67941d3d8822c61394949f76b3ed49728c4989cc64221fb1072545f25ee1-priv" />
         <option value="$PROJECT_DIR$/basic-network/startFabric.sh" />
         <option value="$PROJECT_DIR$/app/controllers/index.js" />
+        <option value="$PROJECT_DIR$/app/views/test2.html" />
+        <option value="$PROJECT_DIR$/basic-network/docker-compose.yml" />
       </list>
     </option>
   </component>
@@ -308,7 +293,7 @@
       <path value="$PROJECT_DIR$/app/package.json" />
     </packageJsonPaths>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="215" />
     <option name="y" value="37" />
     <option name="width" value="1122" />
@@ -320,17 +305,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope">
-        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
-          <expand>
-            <path>
-              <item name="voteApp" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -369,7 +343,54 @@
             <path>
               <item name="voteApp" type="b2602c69:ProjectViewProjectNode" />
               <item name="voteApp" type="462c0819:PsiDirectoryNode" />
+              <item name="basic-network" type="462c0819:PsiDirectoryNode" />
+              <item name="crypto-config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="voteApp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="voteApp" type="462c0819:PsiDirectoryNode" />
+              <item name="basic-network" type="462c0819:PsiDirectoryNode" />
+              <item name="crypto-config" type="462c0819:PsiDirectoryNode" />
+              <item name="peerOrganizations" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="voteApp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="voteApp" type="462c0819:PsiDirectoryNode" />
+              <item name="basic-network" type="462c0819:PsiDirectoryNode" />
+              <item name="crypto-config" type="462c0819:PsiDirectoryNode" />
+              <item name="peerOrganizations" type="462c0819:PsiDirectoryNode" />
+              <item name="org1.example.com" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="voteApp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="voteApp" type="462c0819:PsiDirectoryNode" />
+              <item name="basic-network" type="462c0819:PsiDirectoryNode" />
+              <item name="crypto-config" type="462c0819:PsiDirectoryNode" />
+              <item name="peerOrganizations" type="462c0819:PsiDirectoryNode" />
+              <item name="org1.example.com" type="462c0819:PsiDirectoryNode" />
+              <item name="ca" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="voteApp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="voteApp" type="462c0819:PsiDirectoryNode" />
               <item name="chaincode" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="voteApp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="voteApp" type="462c0819:PsiDirectoryNode" />
+              <item name="chaincode" type="462c0819:PsiDirectoryNode" />
+              <item name="go" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope">
+        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
+          <expand>
+            <path>
+              <item name="voteApp" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
             </path>
           </expand>
           <select />
@@ -384,7 +405,7 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="ts.external.directory.path" value="F:\WebStorm 2018.2.6\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RecentsManager">
@@ -438,7 +459,8 @@
       <workItem from="1548406204400" duration="1609000" />
       <workItem from="1548407930725" duration="14588000" />
       <workItem from="1548473231665" duration="1197000" />
-      <workItem from="1550718908014" duration="14839000" />
+      <workItem from="1550718908014" duration="17912000" />
+      <workItem from="1551185000770" duration="3276000" />
     </task>
     <task id="LOCAL-00001" summary="test the use of git">
       <created>1547802808745</created>
@@ -451,13 +473,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="221362000" />
+    <option name="totallyTimeSpent" value="227711000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21354167" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16517857" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -512,7 +534,6 @@
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/app/controllers/index.js</url>
           <line>397</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
@@ -586,13 +607,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/you.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1392">
-          <caret line="32" column="42" selection-start-line="32" selection-start-column="42" selection-end-line="32" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/you.html" />
     <entry file="file://$PROJECT_DIR$/app/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="209">
@@ -667,12 +682,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/basic-network/start.sh">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/chaincode/go/chaincode_example02_test.go">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/chaincode/vote/vote.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="97">
@@ -700,23 +709,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/chaincode/go/chaincode_example02.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="142" selection-start-line="142" selection-end-line="142" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/basic-network/a.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/hfc-key-store/aa.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="4" selection-start-column="4" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/basic-network/a.html" />
+    <entry file="file://$PROJECT_DIR$/app/hfc-key-store/aa.py" />
     <entry file="file://$PROJECT_DIR$/app/hfc-key-store/3d7b67941d3d8822c61394949f76b3ed49728c4989cc64221fb1072545f25ee1-priv">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -724,66 +718,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/applyList.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-8">
-          <caret line="94" column="26" selection-start-line="94" selection-start-column="26" selection-end-line="94" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/checkDetail.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-8">
-          <caret line="203" column="107" selection-start-line="203" selection-start-column="96" selection-end-line="203" selection-end-column="107" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/routers/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-8">
-          <caret line="13" column="18" selection-start-line="13" selection-start-column="11" selection-end-line="13" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/basic-network/startFabric.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="52" column="12" lean-forward="true" selection-start-line="52" selection-start-column="12" selection-end-line="52" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/basic-network/docker-compose.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-620">
-          <caret line="72" column="23" selection-start-line="72" selection-start-column="23" selection-end-line="72" selection-end-column="23" />
-          <folding>
-            <element signature="e#3941#5640#0" />
-            <element signature="e#5643#7342#0" />
-            <element signature="e#7345#9046#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/test2.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="338">
-          <caret line="13" column="7" selection-start-line="13" selection-start-column="7" selection-end-line="13" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/test.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="5" column="23" selection-start-line="2" selection-start-column="40" selection-end-line="3" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="355">
-          <caret line="541" column="12" lean-forward="true" selection-start-line="541" selection-start-column="12" selection-end-line="541" selection-end-column="12" />
+        <state relative-caret-position="4082">
+          <caret line="476" column="65" selection-start-line="476" selection-start-column="65" selection-end-line="476" selection-end-column="65" />
           <folding>
-            <element signature="e#472#4694#0" />
             <element signature="e#4721#13007#0" />
             <element signature="e#13034#13168#0" />
             <element signature="e#13192#13959#0" />
@@ -797,9 +736,85 @@
             <element signature="e#16244#16368#0" />
             <element signature="e#16394#16735#0" />
             <element signature="e#16764#18326#0" />
-            <element signature="e#18349#18703#0" />
             <element signature="n#!!block;n#query#0" />
             <element signature="n#!!block;n#invoke#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/test2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="11" column="23" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="5" column="23" selection-start-line="2" selection-start-column="40" selection-end-line="3" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chaincode/go/chaincode_example02_test.go">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/checkDetail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5278">
+          <caret line="203" column="107" selection-start-line="203" selection-start-column="96" selection-end-line="203" selection-end-column="107" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/applyList.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2444">
+          <caret line="94" column="26" selection-start-line="94" selection-start-column="26" selection-end-line="94" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/routers/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="338">
+          <caret line="13" column="18" selection-start-line="13" selection-start-column="11" selection-end-line="13" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chaincode/go/chaincode_example02.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="506">
+          <caret line="142" selection-start-line="142" selection-end-line="142" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/basic-network/startFabric.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1196">
+          <caret line="52" column="12" selection-start-line="52" selection-start-column="12" selection-end-line="52" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/basic-network/start.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="283">
+          <caret line="15" column="105" lean-forward="true" selection-start-line="15" selection-start-column="105" selection-end-line="15" selection-end-column="105" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/basic-network/docker-compose.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="326">
+          <caret line="266" column="13" lean-forward="true" selection-start-line="266" selection-start-column="13" selection-end-line="266" selection-end-column="13" />
+          <folding>
+            <element signature="e#832#2172#0" />
+            <element signature="e#2177#3938#0" />
+            <element signature="e#3941#5640#0" />
+            <element signature="e#5643#7342#0" />
+            <element signature="e#7345#9046#0" />
+            <element signature="e#9050#9441#0" />
+            <element signature="e#9445#9809#0" />
+            <element signature="e#9813#10177#0" />
+            <element signature="e#10181#10545#0" />
           </folding>
         </state>
       </provider>

@@ -470,10 +470,11 @@ module.exports = {
         let supplier_result = await query("supplier");
         let bank_result = await query("bank");
         let keywa_result = await query("keywa");
+        let query_blocks = await query_blocks();
 
 
         await ctx.render('test2', {
-            supplier_result,bank_result,keywa_result
+            supplier_result,bank_result,keywa_result,query_blocks
         })
     },
 
@@ -538,8 +539,6 @@ function query( ){
         result = 'Failed to query successfully :: ' + err
     });
 }
-
-function(){}
 
 //转账函数 函数返回tx_id
 function invoke(){
@@ -698,4 +697,26 @@ function invoke(){
 
 
 
+}
+
+//查询区块数
+function query_blocks(){
+    var fabric_client = new Fabric_Client();
+    var key = "name"
+
+// setup the fabric network
+    var channel = fabric_client.newChannel('mychannel');
+    var peer = fabric_client.newPeer('grpc://localhost:7051');
+    channel.addPeer(peer);
+
+    var member_user = null;
+    var store_path = path.join(__dirname, '../hfc-key-store');
+    var tx_id = null;
+    channel.queryInfo()
+        .then(data => {
+            return data;
+            // console.log(data.height)
+        }, err => {
+            console.log("查询链内高度失败")
+        })
 }
