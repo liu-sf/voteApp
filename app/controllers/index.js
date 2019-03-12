@@ -467,14 +467,19 @@ module.exports = {
     async test2(ctx) {
         let result = '';
         // var invoke_result = await invoke("supplier","bank","20");
-        let supplier_result = await query("supplier");
-        let bank_result = await query("bank");
-        let keywa_result = await query("keywa");
-        let query_blocks = await query_blocks();
-
-
+        var supplier_result = await query("supplier");
+        var bank_result = await query("bank");
+        var keywa_result = await query("keywa");
+        // for(i=1;i<2;i++){
+        //     var query_blocks = +await block(i);
+        //
+        // }
+        var block_num = await query_blocknum()
+        for (i=0;i<block_num;i++){
+            var blocks = await query_block(i);
+        }
         await ctx.render('test2', {
-            supplier_result,bank_result,keywa_result,query_blocks
+            supplier_result,bank_result,keywa_result,block_num
         })
     },
 
@@ -700,7 +705,48 @@ function invoke(){
 }
 
 //查询区块数
-function query_blocks(){
+function query_blocknum(){
+    var fabric_client = new Fabric_Client();
+    var key = "name"
+
+// setup the fabric network
+    var channel = fabric_client.newChannel('mychannel');
+    var peer = fabric_client.newPeer('grpc://localhost:7051');
+    channel.addPeer(peer);
+    var member_user = null;
+    var store_path = path.join(__dirname, '../hfc-key-store');
+    var tx_id = null;
+
+    return Fabric_Client.newDefaultKeyValueStore({
+        path: store_path
+    }).then((state_store) => {
+        fabric_client.setStateStore(state_store);
+        var crypto_suite = Fabric_Client.newCryptoSuite();
+        var crypto_store = Fabric_Client.newCryptoKeyStore({path: store_path});
+        crypto_suite.setCryptoKeyStore(crypto_store);
+        fabric_client.setCryptoSuite(crypto_suite);
+        return fabric_client.getUserContext('user1', true);
+    }).then((user_from_store) => {
+        if (user_from_store && user_from_store.isEnrolled()) {
+            console.log('Successfully loaded user1 from persistence');
+            member_user = user_from_store;
+        } else {
+            throw new Error('Failed to get user1.... run registerUser.js');
+        }
+
+        // send the query proposal to the peer
+            return channel.queryInfo();
+        }).then((data) => {
+            //console.log("区块数："+data.height.Long);
+            return data.height.low;
+    }).catch((err) => {
+        console.error('Failed to query blocks successfully :: ' + err);
+        result = 'Failed to query blocks successfully :: ' + err
+    });
+}
+
+//查询区块
+function query_block(){
     var fabric_client = new Fabric_Client();
     var key = "name"
 
@@ -712,11 +758,31 @@ function query_blocks(){
     var member_user = null;
     var store_path = path.join(__dirname, '../hfc-key-store');
     var tx_id = null;
-    channel.queryInfo()
-        .then(data => {
-            return data;
-            // console.log(data.height)
-        }, err => {
-            console.log("查询链内高度失败")
-        })
+
+    return Fabric_Client.newDefaultKeyValueStore({
+        path: store_path
+    }).then((state_store) => {
+        fabric_client.setStateStore(state_store);
+        var crypto_suite = Fabric_Client.newCryptoSuite();
+        var crypto_store = Fabric_Client.newCryptoKeyStore({path: store_path});
+        crypto_suite.setCryptoKeyStore(crypto_store);
+        fabric_client.setCryptoSuite(crypto_suite);
+        return fabric_client.getUserContext('user1', true);
+    }).then((user_from_store) => {
+        if (user_from_store && user_from_store.isEnrolled()) {
+            console.log('Successfully loaded user1 from persistence');
+            member_user = user_from_store;
+        } else {
+            throw new Error('Failed to get user1.... run registerUser.js');
+        }
+
+        // send the query proposal to the peer
+        return channel.queryBlock(arguments[0],peer,skipDecode=false);
+    }).then(data =>{
+        console.log(data);
+        return null;
+    }).catch((err) => {
+        console.error('Failed to query blocks successfully :: ' + err);
+        result = 'Failed to query blocks successfully :: ' + err
+    });
 }
