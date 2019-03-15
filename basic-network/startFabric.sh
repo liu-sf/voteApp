@@ -9,6 +9,7 @@ set -e
 
 # don't rewrite paths for Windows Git Bash users
 export MSYS_NO_PATHCONV=1
+export COMPOSE_HTTP_TIMEOUT=120
 
 starttime=$(date +%s)
 
