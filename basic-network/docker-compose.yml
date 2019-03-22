@@ -15,7 +15,7 @@ services:
       - FABRIC_CA_HOME=/etc/hyperledger/fabric-ca-server
       - FABRIC_CA_SERVER_CA_NAME=ca.example.com
       - FABRIC_CA_SERVER_CA_CERTFILE=/etc/hyperledger/fabric-ca-server-config/ca.org1.example.com-cert.pem
-      - FABRIC_CA_SERVER_CA_KEYFILE=/etc/hyperledger/fabric-ca-server-config/05ce35a9c99cef6129e8cd6f2e1b77426c2431ac7dcb5999e73dbc50303e2300_sk
+      - FABRIC_CA_SERVER_CA_KEYFILE=/etc/hyperledger/fabric-ca-server-config/06f919362e5dbcd1594ed8736107a9d79bc88868900cd6a7a1f5b924d145d015_sk
     ports:
       - "7054:7054"
     command: sh -c 'fabric-ca-server start -b admin:adminpw -d'
@@ -75,8 +75,8 @@ services:
       # The CORE_LEDGER_STATE_COUCHDBCONFIG_USERNAME and CORE_LEDGER_STATE_COUCHDBCONFIG_PASSWORD
       # provide the credentials for ledger to connect to CouchDB.  The username and password must
       # match the username and password set for the associated CouchDB.
-      - CORE_LEDGER_STATE_COUCHDBCONFIG_USERNAME=liu
-      - CORE_LEDGER_STATE_COUCHDBCONFIG_PASSWORD=123456
+      - CORE_LEDGER_STATE_COUCHDBCONFIG_USERNAME=
+      - CORE_LEDGER_STATE_COUCHDBCONFIG_PASSWORD=
     working_dir: /opt/gopath/src/github.com/hyperledger/fabric
     command: peer node start
     # command: peer node start --peer-chaincodedev=true
@@ -113,8 +113,8 @@ services:
     # The CORE_LEDGER_STATE_COUCHDBCONFIG_USERNAME and CORE_LEDGER_STATE_COUCHDBCONFIG_PASSWORD
     # provide the credentials for ledger to connect to CouchDB.  The username and password must
     # match the username and password set for the associated CouchDB.
-    - CORE_LEDGER_STATE_COUCHDBCONFIG_USERNAME=liu
-    - CORE_LEDGER_STATE_COUCHDBCONFIG_PASSWORD=123456
+    - CORE_LEDGER_STATE_COUCHDBCONFIG_USERNAME=
+    - CORE_LEDGER_STATE_COUCHDBCONFIG_PASSWORD=
     working_dir: /opt/gopath/src/github.com/hyperledger/fabric
     command: peer node start
     # command: peer node start --peer-chaincodedev=true
@@ -151,8 +151,8 @@ services:
     # The CORE_LEDGER_STATE_COUCHDBCONFIG_USERNAME and CORE_LEDGER_STATE_COUCHDBCONFIG_PASSWORD
     # provide the credentials for ledger to connect to CouchDB.  The username and password must
     # match the username and password set for the associated CouchDB.
-    - CORE_LEDGER_STATE_COUCHDBCONFIG_USERNAME=liu
-    - CORE_LEDGER_STATE_COUCHDBCONFIG_PASSWORD=123456
+    - CORE_LEDGER_STATE_COUCHDBCONFIG_USERNAME=
+    - CORE_LEDGER_STATE_COUCHDBCONFIG_PASSWORD=
     working_dir: /opt/gopath/src/github.com/hyperledger/fabric
     command: peer node start
     # command: peer node start --peer-chaincodedev=true
@@ -189,8 +189,8 @@ services:
     # The CORE_LEDGER_STATE_COUCHDBCONFIG_USERNAME and CORE_LEDGER_STATE_COUCHDBCONFIG_PASSWORD
     # provide the credentials for ledger to connect to CouchDB.  The username and password must
     # match the username and password set for the associated CouchDB.
-    - CORE_LEDGER_STATE_COUCHDBCONFIG_USERNAME=liu
-    - CORE_LEDGER_STATE_COUCHDBCONFIG_PASSWORD=123456
+    - CORE_LEDGER_STATE_COUCHDBCONFIG_USERNAME=
+    - CORE_LEDGER_STATE_COUCHDBCONFIG_PASSWORD=
     working_dir: /opt/gopath/src/github.com/hyperledger/fabric
     command: peer node start
     # command: peer node start --peer-chaincodedev=true
@@ -214,8 +214,8 @@ services:
     # Populate the COUCHDB_USER and COUCHDB_PASSWORD to set an admin user and password
     # for CouchDB.  This will prevent CouchDB from operating in an "Admin Party" mode.
     environment:
-      - COUCHDB_USER=liu
-      - COUCHDB_PASSWORD=123456
+      - COUCHDB_USER=
+      - COUCHDB_PASSWORD=
     ports:
       - 5984:5984
 #      - 5985:5985
@@ -228,8 +228,8 @@ services:
     # Populate the COUCHDB_USER and COUCHDB_PASSWORD to set an admin user and password
     # for CouchDB.  This will prevent CouchDB from operating in an "Admin Party" mode.
     environment:
-    - COUCHDB_USER=liu
-    - COUCHDB_PASSWORD=123456
+    - COUCHDB_USER=
+    - COUCHDB_PASSWORD=
     ports:
     - 6984:5984
     networks:
@@ -241,8 +241,8 @@ services:
     # Populate the COUCHDB_USER and COUCHDB_PASSWORD to set an admin user and password
     # for CouchDB.  This will prevent CouchDB from operating in an "Admin Party" mode.
     environment:
-    - COUCHDB_USER=liu
-    - COUCHDB_PASSWORD=123456
+    - COUCHDB_USER=
+    - COUCHDB_PASSWORD=
     ports:
     - 7984:5984
     networks:
@@ -254,8 +254,8 @@ services:
     # Populate the COUCHDB_USER and COUCHDB_PASSWORD to set an admin user and password
     # for CouchDB.  This will prevent CouchDB from operating in an "Admin Party" mode.
     environment:
-    - COUCHDB_USER=liu
-    - COUCHDB_PASSWORD=123456
+    - COUCHDB_USER=
+    - COUCHDB_PASSWORD=
     ports:
     - 8984:5984
     networks:

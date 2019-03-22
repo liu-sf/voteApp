@@ -15,6 +15,7 @@ rm -fr crypto-config/*
 
 # generate crypto material
 cryptogen generate --config=./crypto-config.yaml
+#~/go/src/github.com/hyperledger/fabric/build/bin/cryptogen generate --config=./crypto-config.yaml
 if [ "$?" -ne 0 ]; then
   echo "Failed to generate crypto material..."
   exit 1
@@ -22,6 +23,7 @@ fi
 
 # generate genesis block for orderer
 configtxgen -profile TwoOrgsOrdererGenesis -outputBlock ./config/genesis.block
+#~/go/src/github.com/hyperledger/fabric/common/configtx/tool/configtxgen/configtxgen -profile TwoOrgsOrdererGenesis -outputBlock ./config/genesis.block
 if [ "$?" -ne 0 ]; then
   echo "Failed to generate orderer genesis block..."
   exit 1
