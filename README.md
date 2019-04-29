@@ -7,6 +7,7 @@ $ cd basic-network
 ## 关闭清除网络
 $ ./teardown.sh
 ## 重新生成区块链网络的证书、工具等,再手动修改docker-compose.yml中的FABRIC_CA_SERVER_CA_KEYFILE值
+## FABRIC_CA_SERVER_CA_KEYFILE值与crypto-config\peerOrganizations\org1.example.com\ca中的值必须相同
 $ ./generate.sh
 ## 启动 fabric 的网络
 $ ./startFabric.sh
